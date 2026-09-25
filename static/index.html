@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Local Pulse</title>
+<style>
+  :root {
+    --bg: #f6f4ef; --panel: #ffffff; --ink: #1b1b1f; --muted: #6b6b73; --line: #e4e1d8;
+    --accent: #d7263d; --accent-ink: #ffffff; --chip: #efece4; --chip-on: #1b1b1f; --chip-on-ink: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121214; --panel: #1c1c20; --ink: #f1efe9; --muted: #9a9aa3; --line: #2c2c32;
+      --accent: #ff4d5e; --chip: #26262b; --chip-on: #f1efe9; --chip-on-ink: #121214;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 24px 16px 64px; }
+
+  header { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 16px;
+           border-bottom: 2px solid var(--ink); padding-bottom: 14px; margin-bottom: 20px; }
+  .brand { font-weight: 800; letter-spacing: .14em; font-size: 13px; display: flex; align-items: center; gap: 8px; }
+  .live { width: 9px; height: 9px; border-radius: 50%; background: var(--accent); animation: pulse 1.6s infinite; }
+  @keyframes pulse { 50% { opacity: .25; } }
+  h1 { margin: 4px 0 0; font: 800 clamp(28px, 6vw, 44px)/1.05 Georgia, "Times New Roman", serif; }
+  .date { color: var(--muted); font-size: 14px; margin-top: 4px; }
+  .actions { display: flex; gap: 8px; flex-wrap: wrap; }
+  button { font: 600 14px system-ui, sans-serif; padding: 9px 14px; border-radius: 8px; cursor: pointer;
+           border: 1px solid var(--line); background: var(--panel); color: var(--ink); }
+  button.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+  button:disabled { opacity: .5; cursor: wait; }
+
+  .player { position: relative; aspect-ratio: 16 / 9; background: #000; border-radius: 12px; overflow: hidden; }
+  .player video { width: 100%; height: 100%; display: block; }
+  .slides { position: absolute; inset: 0; display: grid; place-items: center; padding: 32px;
+            background: radial-gradient(circle at 30% 20%, #3a1d24, #0d0d10 70%); color: #fff; text-align: center; }
+  .slides .kicker { font-size: 12px; letter-spacing: .16em; color: #ff8a96; font-weight: 700; margin-bottom: 10px; }
+  .slides .line { font: 700 clamp(18px, 3.4vw, 30px)/1.3 Georgia, serif; max-width: 34ch; transition: opacity .4s; }
+  @media (max-width: 520px) { .slides { padding: 12px 16px 36px; } .slides .line { font-size: 15px; } .slides .kicker { margin-bottom: 4px; } }
+  .lower-third { position: absolute; left: 0; bottom: 0; background: var(--accent); color: #fff;
+                 font-weight: 700; font-size: 13px; letter-spacing: .08em; padding: 6px 14px; }
+  .status { color: var(--muted); font-size: 14px; min-height: 22px; margin: 10px 0 24px; }
+  .status .error { color: var(--accent); }
+
+  h2 { font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin: 0 0 10px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+  .chip { border: 0; background: var(--chip); padding: 6px 12px; border-radius: 999px; font-weight: 600; }
+  .chip span { color: var(--muted); font-weight: 500; margin-left: 4px; }
+  .chip.on { background: var(--chip-on); color: var(--chip-on-ink); }
+  .chip.on span { color: inherit; opacity: .7; }
+
+  .events { display: grid; gap: 10px; }
+  .event { display: grid; grid-template-columns: 64px 1fr; gap: 14px; background: var(--panel);
+           border: 1px solid var(--line); border-radius: 12px; padding: 14px; }
+  .day { text-align: center; border-right: 1px solid var(--line); padding-right: 12px; }
+  .day .dow { font-size: 12px; font-weight: 700; color: var(--accent); letter-spacing: .08em; }
+  .day .num { font: 800 26px/1.1 Georgia, serif; }
+  .day .mon { font-size: 12px; color: var(--muted); }
+  .event > div { min-width: 0; overflow-wrap: anywhere; }
+  .event h3 { margin: 0 0 2px; font-size: 17px; line-height: 1.3; }
+  .event h3 a { color: inherit; text-decoration: none; }
+  .event h3 a:hover { text-decoration: underline; }
+  .meta { color: var(--muted); font-size: 14px; }
+  .desc { font-size: 14px; margin: 6px 0 0; }
+  .tag { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+         background: var(--chip); padding: 2px 8px; border-radius: 4px; margin-top: 8px; }
+  .empty { color: var(--muted); padding: 24px 0; }
+  footer { margin-top: 32px; color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <div class="brand"><span class="live"></span>LOCAL PULSE</div>
+      <h1 id="hood">Your neighborhood</h1>
+      <div class="date" id="today"></div>
+    </div>
+    <div class="actions">
+      <button id="refresh" title="Scrape, normalize and load into RawTree">Refresh events</button>
+      <button id="render" class="primary" title="Write the script and render with FLUX 3">Render video</button>
+    </div>
+  </header>
+
+  <div class="player" id="player">
+    <div class="slides" id="slides">
+      <div><div class="kicker" id="kicker">THIS WEEK</div><div class="line" id="line">No video yet. Hit “Render video”.</div></div>
+    </div>
+    <div class="lower-third" id="lowerThird">THIS WEEK</div>
+  </div>
+  <div class="status" id="status"></div>
+
+  <h2>Trending this week</h2>
+  <div class="chips" id="chips"></div>
+
+  <h2>Happening this week <span id="source"></span></h2>
+  <div class="events" id="events"></div>
+
+  <footer>Events found by Nimble web agents · stored and queried in RawTree · video by FLUX 3</footer>
+</div>
+
+<script>
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+let category = "";
+let slideTimer = null;
+let lastVideo;  // undefined until the first load, so a null url still renders the slideshow
+
+async function api(path, opts) {
+  const res = await fetch(path, opts);
+  if (!res.ok) throw new Error((await res.json().catch(() => ({}))).detail || res.statusText);
+  return res.json();
+}
+
+async function loadVideo() {
+  const { url, script } = await api("/video");
+  if (url === lastVideo) return;
+  lastVideo = url;
+  const player = $("player");
+  clearInterval(slideTimer);
+  if (url) {
+    player.innerHTML = `<video src="${esc(url)}" controls playsinline preload="metadata"></video>`;
+    return;
+  }
+  // No video yet: show the script as a caption slideshow.
+  const scenes = script?.scenes || [];
+  if (!scenes.length) return;
+  let i = 0;
+  const show = () => {
+    const s = scenes[i++ % scenes.length];
+    $("line").style.opacity = 0;
+    setTimeout(() => {
+      $("line").textContent = s.narration;
+      $("kicker").textContent = s.kind === "highlight" ? "HIGHLIGHT" : "LOCAL PULSE";
+      $("line").style.opacity = 1;
+    }, 300);
+  };
+  show();
+  slideTimer = setInterval(show, 4000);
+}
+
+async function loadTrending() {
+  const { categories } = await api("/trending");
+  const total = categories.reduce((n, c) => n + Number(c.events), 0);
+  $("chips").innerHTML = [{ name: "", events: total }, ...categories].map((c) =>
+    `<button class="chip ${c.name === category ? "on" : ""}" data-cat="${esc(c.name)}">${esc(c.name || "all")}<span>${esc(c.events)}</span></button>`
+  ).join("");
+}
+
+async function loadEvents() {
+  const { events, source } = await api(`/events?category=${encodeURIComponent(category)}`);
+  $("source").textContent = source === "cache" ? "(offline copy)" : "";
+  if (!events.length) {
+    $("events").innerHTML = `<div class="empty">No events yet. Hit “Refresh events”.</div>`;
+    return;
+  }
+  $("events").innerHTML = events.map((e) => {
+    const d = new Date(e.start_date + "T12:00:00");
+    return `<article class="event">
+      <div class="day">
+        <div class="dow">${d.toLocaleDateString("en-US", { weekday: "short" }).toUpperCase()}</div>
+        <div class="num">${d.getDate()}</div>
+        <div class="mon">${d.toLocaleDateString("en-US", { month: "short" })}</div>
+      </div>
+      <div>
+        <h3>${e.url ? `<a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.title)}</a>` : esc(e.title)}</h3>
+        <div class="meta">${esc(e.store)}${e.address ? " · " + esc(e.address) : ""}</div>
+        ${e.description ? `<p class="desc">${esc(e.description)}</p>` : ""}
+        <span class="tag">${esc(e.category)}</span>
+      </div>
+    </article>`;
+  }).join("");
+}
+
+function showStatus(jobs) {
+  const parts = Object.entries(jobs)
+    .filter(([, j]) => j.state !== "idle")
+    .map(([name, j]) => `<span class="${j.state === "error" ? "error" : ""}">${name}: ${esc(j.state)}${j.detail ? " – " + esc(j.detail) : ""}</span>`);
+  $("status").innerHTML = parts.join(" · ");
+  $("refresh").disabled = jobs.refresh.state === "running";
+  $("render").disabled = jobs.render.state === "running";
+}
+
+let wasRunning = {};
+async function poll() {
+  const { neighborhood, jobs } = await api("/status");
+  $("hood").textContent = neighborhood.split(",")[0];
+  showStatus(jobs);
+  for (const [name, j] of Object.entries(jobs)) {
+    if (wasRunning[name] && j.state !== "running") {
+      if (name === "refresh") { loadTrending(); loadEvents(); }
+      loadVideo();
+    }
+    wasRunning[name] = j.state === "running";
+  }
+}
+
+$("chips").addEventListener("click", (ev) => {
+  const chip = ev.target.closest(".chip");
+  if (!chip) return;
+  category = chip.dataset.cat;
+  loadTrending();
+  loadEvents();
+});
+
+async function start(path) {
+  try { showStatus((await api("/status")).jobs); await api(path, { method: "POST" }); poll(); }
+  catch (e) { $("status").innerHTML = `<span class="error">${esc(e.message)}</span>`; }
+}
+$("refresh").onclick = () => start("/refresh");
+$("render").onclick = () => start("/render");
+
+$("today").textContent = new Date().toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric" });
+poll(); loadVideo(); loadTrending(); loadEvents();
+setInterval(poll, 3000);
+</script>
+</body>
+</html>

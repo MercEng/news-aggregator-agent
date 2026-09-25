@@ -1,0 +1,468 @@
+{
+  "output": {
+    "content": {
+      "events": [
+        {
+          "url": "https://hayespromenade.org/events/hayes-valley-farmers-market",
+          "store": "Hayes Valley Farmers' Market (Hayes Promenade / PCFMA)",
+          "title": "Hayes Valley Farmers' Market",
+          "address": "485 Hayes Street, San Francisco, CA 94102",
+          "category": "food",
+          "end_date": "2026-09-26",
+          "start_date": "2026-09-26",
+          "description": "Weekly Saturday farmers' market in Hayes Valley run by the Pacific Coast Farmers' Market Association; Saturday Sept 26, 2026 falls in the requested date range. The Hayes Promenade listing shows the market running Saturdays from June 6 to December 26, 2026, 10:00 AM\u20132:00 PM."
+        },
+        {
+          "url": "https://www.pcfma.org/market/hayes-valley-farmers-market",
+          "store": "Pacific Coast Farmers' Market Association (PCFMA)",
+          "title": "Hayes Valley Farmers' Market",
+          "address": "450 Hayes Street, San Francisco, CA 94102",
+          "category": "food",
+          "end_date": "2026-09-26",
+          "start_date": "2026-09-26",
+          "description": "Year-round Saturday farmers' market at 450 Hayes Street, 10:00 AM\u20132:00 PM, organized by PCFMA in partnership with the Hayes Valley Merchants Council, Hayes Valley Neighborhood Association, and Hayes Promenade. Saturday Sept 26, 2026 falls within the requested date range."
+        },
+        {
+          "url": "https://hayesvalleysf.org/calendar/",
+          "store": "Hayes Valley Neighborhood Association (HVNA)",
+          "title": "Hayes Valley Farmers' Market",
+          "address": "450 Hayes Street, San Francisco, CA 94102",
+          "category": "food",
+          "end_date": "2026-09-26",
+          "start_date": "2026-09-26",
+          "description": "Every Saturday, 10:00 AM\u20132:00 PM at 450 Hayes Street; HVNA calendar lists this market as a recurring event with the next instance on Saturday Sept 26, 2026 within the requested date range."
+        }
+      ]
+    },
+    "trust": {
+      "claims": [
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events/hayes-valley-farmers-market",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Hayes Valley Farmers' Market \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[0].url",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events/hayes-valley-farmers-market",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Hayes Valley Farmers' Market \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[0].store",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events/hayes-valley-farmers-market",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Hayes Valley Farmers' Market \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[0].title",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events/hayes-valley-farmers-market",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Hayes Valley Farmers' Market \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[0].address",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events/hayes-valley-farmers-market",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Hayes Valley Farmers' Market \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[0].category",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events/hayes-valley-farmers-market",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Hayes Valley Farmers' Market \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[0].end_date",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events/hayes-valley-farmers-market",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Hayes Valley Farmers' Market \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[0].start_date",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events/hayes-valley-farmers-market",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Hayes Valley Farmers' Market \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[0].description",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://pcfma.org/market/hayes-valley-farmers-market",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Hayes Valley Farmers' Market"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[1].url",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://pcfma.org/market/hayes-valley-farmers-market",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Hayes Valley Farmers' Market"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[1].store",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://pcfma.org/market/hayes-valley-farmers-market",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Hayes Valley Farmers' Market"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[1].title",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://pcfma.org/market/hayes-valley-farmers-market",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Hayes Valley Farmers' Market"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[1].address",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://pcfma.org/market/hayes-valley-farmers-market",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Hayes Valley Farmers' Market"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[1].category",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://pcfma.org/market/hayes-valley-farmers-market",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Hayes Valley Farmers' Market"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[1].end_date",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://pcfma.org/market/hayes-valley-farmers-market",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Hayes Valley Farmers' Market"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[1].start_date",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://pcfma.org/market/hayes-valley-farmers-market",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Hayes Valley Farmers' Market"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[1].description",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayesvalleysf.org/calendar",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Calendar - Hayes Valley Neighborhood Association"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[2].url",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayesvalleysf.org/calendar",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Calendar - Hayes Valley Neighborhood Association"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[2].store",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayesvalleysf.org/calendar",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Calendar - Hayes Valley Neighborhood Association"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[2].title",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayesvalleysf.org/calendar",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Calendar - Hayes Valley Neighborhood Association"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[2].address",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayesvalleysf.org/calendar",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Calendar - Hayes Valley Neighborhood Association"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[2].category",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayesvalleysf.org/calendar",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Calendar - Hayes Valley Neighborhood Association"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[2].end_date",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayesvalleysf.org/calendar",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Calendar - Hayes Valley Neighborhood Association"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[2].start_date",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayesvalleysf.org/calendar",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Calendar - Hayes Valley Neighborhood Association"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[2].description",
+          "reasoning": "Backed by a primary source (news)"
+        }
+      ],
+      "confidence": "high",
+      "reasoning": "High confidence - cells fill rate is 100% and trust per claim ratio is 100%",
+      "sources": [
+        {
+          "type": "primary",
+          "url": "https://hayespromenade.org/events/hayes-valley-farmers-market",
+          "extract_template_name": null,
+          "source_category": "news",
+          "source_intent": null,
+          "title": "Hayes Valley Farmers' Market \u2014 Hayes Promenade"
+        },
+        {
+          "type": "primary",
+          "url": "https://pcfma.org/market/hayes-valley-farmers-market",
+          "extract_template_name": null,
+          "source_category": "news",
+          "source_intent": null,
+          "title": "Hayes Valley Farmers' Market"
+        },
+        {
+          "type": "primary",
+          "url": "https://hayesvalleysf.org/calendar",
+          "extract_template_name": null,
+          "source_category": "news",
+          "source_intent": null,
+          "title": "Calendar - Hayes Valley Neighborhood Association"
+        }
+      ]
+    },
+    "type": "json"
+  },
+  "run": {
+    "id": "task_run_021d5fb317b842eba998c3d389f8ff3c",
+    "created_at": "2026-09-25T18:13:35.938527Z",
+    "effort": "medium",
+    "interaction_id": "task_run_021d5fb317b842eba998c3d389f8ff3c",
+    "is_active": false,
+    "status": "completed",
+    "web_search_agent_id": "wsa_06d5960e11d142b79ddf3da54e3e76be",
+    "completed_at": "2026-09-25T18:15:04.731709Z",
+    "error": null,
+    "prompt": "Find upcoming in-person food and drink events, tastings and markets in Hayes Valley, San Francisco happening between 2026-09-25 and 2026-10-02. Focus on local shops, cafes, bookstores, galleries and venues. Only include events with a concrete date in that range, and give the page URL where each event is listed. Local businesses worth checking include: Industry of All Nations, Azil Boutique, Buck Mason, Reliquary, Rails San Francisco, Cotopaxi Hayes Valley, Todd Snyder San Francisco Hayes Valley, Marine Layer, Modern Appealing Clothing, Dark Garden, AETHER Apparel, Clare V., Faherty San Francisco, Aviator Nation, A.P.C., Lisa Says Gah, 7th Avenue @ Hayes Valley San Francisco, Fiddlesticks, Cotton Sheep, Credo Beauty, Booksmith, Noe Valley Books, Borderlands Books, Browser Books, Isotope Comics.",
+    "started_at": "2026-09-25T18:13:36.334996Z"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "neighborhood": "Hayes Valley, San Francisco",
+  "date": "2026-09-25",
+  "scenes": [
+    {
+      "kind": "intro",
+      "visual": "A friendly local news anchor at a bright, modern news desk, a large window behind showing a leafy San Francisco street with Victorian houses and small shopfronts, warm morning light, broadcast camera framing, no logos, no on-screen text",
+      "narration": "Good morning, Hayes Valley! Here's what's happening this week, with lots of community and music on the calendar."
+    },
+    {
+      "kind": "highlight",
+      "event_id": "8fd571717cc5634619ed4ce631804f63c4fef046",
+      "visual": "an evening outdoor plaza with string lights and a small band performing, handheld documentary style, no logos, no readable text",
+      "narration": "Today, LAMb Trio at Hayes Promenade."
+    },
+    {
+      "kind": "highlight",
+      "event_id": "ee3da9bbfaa91d4c11ab8879fcbf54f887fdb37e",
+      "visual": "neighbors gathering on a sunny tree-lined street for a community event, handheld documentary style, no logos, no readable text",
+      "narration": "Tomorrow, Hayes Valley Community Cleanup at Gambit Lounge."
+    },
+    {
+      "kind": "highlight",
+      "event_id": "3e188e037ebd641cbd7f5db2a53072acca57afc0",
+      "visual": "a lively tree-lined shopping street with cafes and small shops at golden hour, handheld documentary style, no logos, no readable text",
+      "narration": "On Friday, October 2, Sentimental Value at PROXY."
+    },
+    {
+      "kind": "outro",
+      "visual": "A friendly local news anchor at a bright, modern news desk, a large window behind showing a leafy San Francisco street with Victorian houses and small shopfronts, warm morning light, broadcast camera framing, no logos, no on-screen text",
+      "narration": "That's your Local Pulse for Hayes Valley. Get out there and enjoy it!"
+    }
+  ]
+}

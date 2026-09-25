@@ -1,0 +1,874 @@
+{
+  "output": {
+    "content": {
+      "events": [
+        {
+          "url": "https://hayespromenade.org/events/live-jazz-lamb-trio-2026-09-25",
+          "store": "Hayes Promenade",
+          "title": "Live Music: LAMb Trio",
+          "address": "447 Hayes Street, San Francisco, CA 94102",
+          "category": "music",
+          "end_date": "2026-09-25",
+          "start_date": "2026-09-25",
+          "description": "Free outdoor live jazz by the LAMb Trio on Hayes Promenade, 4:30pm-6:30pm. Part of the Hayes Valley Entertainment Zone."
+        },
+        {
+          "url": "https://hayespromenade.org/events/spy-camp-presents-spy-night",
+          "store": "Spy Camp",
+          "title": "Spy Camp Presents: Spy Night",
+          "address": "188 Octavia St @ Page, San Francisco",
+          "category": "community",
+          "end_date": "2026-09-25",
+          "start_date": "2026-09-25",
+          "description": "Spy Camp's Spy Night community event on the edge of Hayes Valley, 6pm-10pm. See spycamp.net/spynights for details."
+        },
+        {
+          "url": "https://hayespromenade.org/events/proxy-fall-series-project-hail-mary",
+          "store": "PROXY (ProxySF)",
+          "title": "PROXY Fall Series: Project Hail Mary",
+          "address": "432 Octavia St, San Francisco",
+          "category": "community",
+          "end_date": "2026-09-25",
+          "start_date": "2026-09-25",
+          "description": "Free outdoor screening of Project Hail Mary at PROXY sf as part of the fall film series, 7:15pm-10pm."
+        },
+        {
+          "url": "https://hayespromenade.org/events/dj-soundsmith",
+          "store": "Hayes Promenade",
+          "title": "Live Music: DJ SoundSmith",
+          "address": "447 Hayes Street, San Francisco, CA 94102",
+          "category": "music",
+          "end_date": "2026-09-26",
+          "start_date": "2026-09-26",
+          "description": "Free outdoor DJ set by DJ SoundSmith (DJ Sam) on Hayes Promenade, 5pm-7pm, during the Saturday Entertainment Zone hours."
+        },
+        {
+          "url": "https://hayesvalleysf.org/calendar/?event_id1=9638",
+          "store": "Hayes Valley Art Works",
+          "title": "Jazz Jam at Hayes Valley Art Works",
+          "address": "Hayes Valley Art Works Garden, 295 Oak St, San Francisco",
+          "category": "music",
+          "end_date": "2026-09-26",
+          "start_date": "2026-09-26",
+          "description": "Monthly outdoor jazz jam in the Hayes Valley Art Works garden, 1:30pm-4pm. See hayesvalleyartworks.org for details."
+        },
+        {
+          "url": "https://hayespromenade.org/events/proxy-fall-series-sentimental-value",
+          "store": "PROXY (ProxySF)",
+          "title": "PROXY Fall Series: Sentimental Value",
+          "address": "432 Octavia St, San Francisco",
+          "category": "community",
+          "end_date": "2026-10-02",
+          "start_date": "2026-10-02",
+          "description": "Free outdoor screening of Sentimental Value at PROXY sf as part of the fall film series, 7:15pm-9:30pm."
+        }
+      ]
+    },
+    "trust": {
+      "claims": [
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Events \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[0].url",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Events \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[0].store",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Events \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[0].title",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Events \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[0].address",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Events \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[0].category",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Events \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[0].end_date",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Events \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[0].start_date",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Events \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[0].description",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Events \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[1].url",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Events \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[1].store",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Events \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[1].title",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Events \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[1].address",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Events \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[1].category",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Events \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[1].end_date",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Events \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[1].start_date",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Events \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[1].description",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Events \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[2].url",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Events \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[2].store",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Events \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[2].title",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Events \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[2].address",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Events \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[2].category",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Events \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[2].end_date",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Events \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[2].start_date",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Events \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[2].description",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Events \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[3].url",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Events \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[3].store",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Events \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[3].title",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Events \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[3].address",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Events \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[3].category",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Events \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[3].end_date",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Events \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[3].start_date",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Events \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[3].description",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayesvalleysf.org/calendar",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Calendar - Hayes Valley Neighborhood Association"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[4].url",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayesvalleysf.org/calendar",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Calendar - Hayes Valley Neighborhood Association"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[4].store",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayesvalleysf.org/calendar",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Calendar - Hayes Valley Neighborhood Association"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[4].title",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayesvalleysf.org/calendar",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Calendar - Hayes Valley Neighborhood Association"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[4].address",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayesvalleysf.org/calendar",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Calendar - Hayes Valley Neighborhood Association"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[4].category",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayesvalleysf.org/calendar",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Calendar - Hayes Valley Neighborhood Association"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[4].end_date",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayesvalleysf.org/calendar",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Calendar - Hayes Valley Neighborhood Association"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[4].start_date",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayesvalleysf.org/calendar",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Calendar - Hayes Valley Neighborhood Association"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[4].description",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Events \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[5].url",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Events \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[5].store",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Events \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[5].title",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Events \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[5].address",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Events \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[5].category",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Events \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[5].end_date",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Events \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[5].start_date",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayespromenade.org/events",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Events \u2014 Hayes Promenade"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[5].description",
+          "reasoning": "Backed by a primary source (news)"
+        }
+      ],
+      "confidence": "high",
+      "reasoning": "High confidence - cells fill rate is 100% and trust per claim ratio is 100%",
+      "sources": [
+        {
+          "type": "primary",
+          "url": "https://hayespromenade.org/events",
+          "extract_template_name": null,
+          "source_category": "news",
+          "source_intent": null,
+          "title": "Events \u2014 Hayes Promenade"
+        },
+        {
+          "type": "primary",
+          "url": "https://hayesvalleysf.org/calendar",
+          "extract_template_name": null,
+          "source_category": "news",
+          "source_intent": null,
+          "title": "Calendar - Hayes Valley Neighborhood Association"
+        }
+      ]
+    },
+    "type": "json"
+  },
+  "run": {
+    "id": "task_run_d7785dfe31d444feb9888a6b6899c1be",
+    "created_at": "2026-09-25T18:13:35.775460Z",
+    "effort": "medium",
+    "interaction_id": "task_run_d7785dfe31d444feb9888a6b6899c1be",
+    "is_active": false,
+    "status": "completed",
+    "web_search_agent_id": "wsa_d73ccdbad2364ff299deb5e4cf412ce1",
+    "completed_at": "2026-09-25T18:16:16.438357Z",
+    "error": null,
+    "prompt": "Find upcoming in-person sales, sample sales and store promotions in Hayes Valley, San Francisco happening between 2026-09-25 and 2026-10-02. Focus on local shops, cafes, bookstores, galleries and venues. Only include events with a concrete date in that range, and give the page URL where each event is listed. Local businesses worth checking include: Industry of All Nations, Azil Boutique, Buck Mason, Reliquary, Rails San Francisco, Cotopaxi Hayes Valley, Todd Snyder San Francisco Hayes Valley, Marine Layer, Modern Appealing Clothing, Dark Garden, AETHER Apparel, Clare V., Faherty San Francisco, Aviator Nation, A.P.C., Lisa Says Gah, 7th Avenue @ Hayes Valley San Francisco, Fiddlesticks, Cotton Sheep, Credo Beauty, Booksmith, Noe Valley Books, Borderlands Books, Browser Books, Isotope Comics.",
+    "started_at": "2026-09-25T18:13:35.864405Z"
+  }
+}

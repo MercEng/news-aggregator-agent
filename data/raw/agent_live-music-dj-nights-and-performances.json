@@ -1,0 +1,302 @@
+{
+  "output": {
+    "content": {
+      "events": [
+        {
+          "url": "https://hayesvalleyartworks.org/jazz-jam-last-saturday-of-every-month/",
+          "store": "Hayes Valley Art Works",
+          "title": "Jazz Jam at Hayes Valley Art Works",
+          "address": "Hayes Valley Art Works Garden, 295 Oak St, SF",
+          "category": "music",
+          "end_date": "",
+          "start_date": "2026-09-26",
+          "description": "Monthly community jazz jam session hosted at the Hayes Valley Art Works garden; musicians and listeners welcome, 1:30pm-4pm."
+        },
+        {
+          "url": "https://www.sfjazz.org/tickets/productions/26-27/snarky-puppy/",
+          "store": "SFJAZZ Center",
+          "title": "Snarky Puppy",
+          "address": null,
+          "category": "music",
+          "end_date": null,
+          "start_date": "2026-10-02",
+          "description": "Grammy-winning jazz-fusion collective Snarky Puppy performs at SFJAZZ Center in Hayes Valley as part of the 26-27 season."
+        }
+      ]
+    },
+    "trust": {
+      "claims": [
+        {
+          "citations": [
+            {
+              "url": "https://hayesvalleysf.org/calendar",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "other",
+              "source_intent": "other",
+              "source_type": "secondary",
+              "title": "Calendar - Hayes Valley Neighborhood Association"
+            }
+          ],
+          "confidence": "medium",
+          "path": "$.events[0].address",
+          "reasoning": "Backed by a secondary source (other)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayesvalleysf.org/calendar",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "other",
+              "source_intent": "other",
+              "source_type": "secondary",
+              "title": "Calendar - Hayes Valley Neighborhood Association"
+            }
+          ],
+          "confidence": "medium",
+          "path": "$.events[0].category",
+          "reasoning": "Backed by a secondary source (other)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayesvalleysf.org/calendar",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "other",
+              "source_intent": "other",
+              "source_type": "secondary",
+              "title": "Calendar - Hayes Valley Neighborhood Association"
+            }
+          ],
+          "confidence": "medium",
+          "path": "$.events[0].description",
+          "reasoning": "Backed by a secondary source (other)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayesvalleysf.org/calendar",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "other",
+              "source_intent": "other",
+              "source_type": "secondary",
+              "title": "Calendar - Hayes Valley Neighborhood Association"
+            }
+          ],
+          "confidence": "medium",
+          "path": "$.events[0].end_date",
+          "reasoning": "Backed by a secondary source (other)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayesvalleysf.org/calendar",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "other",
+              "source_intent": "other",
+              "source_type": "secondary",
+              "title": "Calendar - Hayes Valley Neighborhood Association"
+            }
+          ],
+          "confidence": "medium",
+          "path": "$.events[0].start_date",
+          "reasoning": "Backed by a secondary source (other)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayesvalleysf.org/calendar",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "other",
+              "source_intent": "other",
+              "source_type": "secondary",
+              "title": "Calendar - Hayes Valley Neighborhood Association"
+            }
+          ],
+          "confidence": "medium",
+          "path": "$.events[0].store",
+          "reasoning": "Backed by a secondary source (other)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayesvalleysf.org/calendar",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "other",
+              "source_intent": "other",
+              "source_type": "secondary",
+              "title": "Calendar - Hayes Valley Neighborhood Association"
+            }
+          ],
+          "confidence": "medium",
+          "path": "$.events[0].title",
+          "reasoning": "Backed by a secondary source (other)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://hayesvalleysf.org/calendar",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "other",
+              "source_intent": "other",
+              "source_type": "secondary",
+              "title": "Calendar - Hayes Valley Neighborhood Association"
+            }
+          ],
+          "confidence": "medium",
+          "path": "$.events[0].url",
+          "reasoning": "Backed by a secondary source (other)"
+        },
+        {
+          "citations": [],
+          "confidence": "low",
+          "path": "$.events[1].address",
+          "reasoning": "Value failed schema validation"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://sfjazz.org/calendar",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "Calendar"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[1].category",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://sfjazz.org/calendar",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "Calendar"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[1].description",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [],
+          "confidence": "low",
+          "path": "$.events[1].end_date",
+          "reasoning": "Value failed schema validation"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://sfjazz.org/calendar",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "Calendar"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[1].start_date",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://sfjazz.org/calendar",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "Calendar"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[1].store",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://sfjazz.org/calendar",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "Calendar"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[1].title",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://sfjazz.org/calendar",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "Calendar"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.events[1].url",
+          "reasoning": "Backed by a primary source (official)"
+        }
+      ],
+      "confidence": "medium",
+      "reasoning": "Medium confidence - trust per claim ratio is 88%",
+      "sources": [
+        {
+          "type": "secondary",
+          "url": "https://hayesvalleysf.org/calendar",
+          "extract_template_name": null,
+          "source_category": "other",
+          "source_intent": null,
+          "title": "Calendar - Hayes Valley Neighborhood Association"
+        },
+        {
+          "type": "primary",
+          "url": "https://sfjazz.org/calendar",
+          "extract_template_name": null,
+          "source_category": "official",
+          "source_intent": null,
+          "title": "Calendar"
+        }
+      ]
+    },
+    "type": "json"
+  },
+  "run": {
+    "id": "task_run_4acb563fc6d247dc9b0858c9bece5e13",
+    "created_at": "2026-09-25T18:13:35.781258Z",
+    "effort": "medium",
+    "interaction_id": "task_run_4acb563fc6d247dc9b0858c9bece5e13",
+    "is_active": false,
+    "status": "completed",
+    "web_search_agent_id": "wsa_2c53278e833949df964b7bdcb12b1931",
+    "completed_at": "2026-09-25T18:18:03.023828Z",
+    "error": null,
+    "prompt": "Find upcoming in-person live music, DJ nights and performances in Hayes Valley, San Francisco happening between 2026-09-25 and 2026-10-02. Focus on local shops, cafes, bookstores, galleries and venues. Only include events with a concrete date in that range, and give the page URL where each event is listed. Local businesses worth checking include: Industry of All Nations, Azil Boutique, Buck Mason, Reliquary, Rails San Francisco, Cotopaxi Hayes Valley, Todd Snyder San Francisco Hayes Valley, Marine Layer, Modern Appealing Clothing, Dark Garden, AETHER Apparel, Clare V., Faherty San Francisco, Aviator Nation, A.P.C., Lisa Says Gah, 7th Avenue @ Hayes Valley San Francisco, Fiddlesticks, Cotton Sheep, Credo Beauty, Booksmith, Noe Valley Books, Borderlands Books, Browser Books, Isotope Comics.",
+    "started_at": "2026-09-25T18:13:35.868676Z"
+  }
+}
